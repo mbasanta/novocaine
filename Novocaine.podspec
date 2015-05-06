@@ -1,11 +1,12 @@
-Pod::Spec.new do |spec|
-    spec.name         = 'Novocaine'
-    spec.version      = '0.0.1'
-    spec.summary      = 'Novocaine'
-    spec.source_files = 'Novocaine/'
-    spec.requires_arc = true
-    spec.ios.deployment_target = '5.1'
-    spec.author       = {"Alex Wiltschko" => "alex.bw@gmail.com" }
-    spec.frameworks   = 'AudioToolbox','Accelerate'
-    spec.libraries    = 'stdc++'
+Pod::Spec.new do |s|
+  s.name         =  'Novocaine'
+  s.version      =  '0.0.1'
+  s.license      =  'MIT'
+  s.summary      =  'Painless high-performance audio on iOS and Mac OS X.'
+  s.homepage     =  'http://mbasanta.github.com/novocaine/'
+  s.author       =  { 'Ari Lerner' => 'arilerner@mac.com', 'Alex Wiltschko' => '@awiltsch' }
+  s.source       =  { :git => 'https://github.com/mbasanta/novocaine.git', :tag => '0.0.1' }
+  s.source_files =  'Novocaine'
+  s.frameworks   =  'AudioToolbox', 'Accelerate'
+  s.requires_arc = false
 end
